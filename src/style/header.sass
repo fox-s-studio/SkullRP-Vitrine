@@ -1,0 +1,37 @@
+@keyframes appearsFast
+    from
+        opacity: 0
+        transform: translateY(100%)
+    to
+        opacity: 1
+        transform: translateY(0%)
+
+@keyframes appearsLow
+    from
+        opacity: 0
+        transform: translateY(300%)
+    to
+        opacity: 1
+        transform: translateY(0%)
+
+.Header
+    background: linear-gradient(to bottom, rgba($primary,.5) 0%, rgba($primary,1.0) 100%),url('../img/HeaderWp.jpg')
+    background-size: cover
+    background-position: center
+    .HeaderContent
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .Logo
+        height: 150px
+        img
+            max-height: 100%
+            animation:  appearsFast 1s forwards
+    .Title
+        color: #c8d6e5
+        margin: 5px 0
+        font-size: 35px
+        animation:  appearsLow 1.3s forwards
+
